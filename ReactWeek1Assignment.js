@@ -15,10 +15,14 @@ class Bootcamp {
     }
 
     registerStudent (studentToRegister) {
-        console.log("You madeit to the method");
-        console.log(studentToRegister.email);
-        new studentToRegisterArray = Object.keys(studentToRegister);
-        console.log(studentsToRegisterArray);
+        console.log("You made it to the method");
+        console.log(`${this.students}`);
+        if (Bootcamp.students.includes(studentToRegister.email)) {
+            console.log("match");
+        } else {
+            console.log ("no Match");
+        }
+
     }
 }
 
